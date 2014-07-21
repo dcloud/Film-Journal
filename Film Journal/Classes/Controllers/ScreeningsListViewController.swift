@@ -1,5 +1,5 @@
 //
-//  FirstViewController.swift
+//  ScreeningsListViewController.swift
 //  Film Journal
 //
 //  Created by Daniel Cloud on 7/20/14.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class FirstViewController: UIViewController {
+class ScreeningsListViewController: UIViewController {
                             
     override func viewDidLoad() {
         super.viewDidLoad()

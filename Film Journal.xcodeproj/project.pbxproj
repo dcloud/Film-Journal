@@ -10,8 +10,8 @@
 		2F8E42AF197CAE0D00841C48 /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F8E42A2197CADE100841C48 /* Realm.framework */; };
 		2F8E42B2197CAE4500841C48 /* Realm.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 2F8E42A6197CADE100841C48 /* Realm.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		2FA73DA2197CAA5400C25D84 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FA73DA1197CAA5400C25D84 /* AppDelegate.swift */; };
-		2FA73DA4197CAA5400C25D84 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FA73DA3197CAA5400C25D84 /* FirstViewController.swift */; };
-		2FA73DA6197CAA5400C25D84 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FA73DA5197CAA5400C25D84 /* SecondViewController.swift */; };
+		2FA73DA4197CAA5400C25D84 /* FilmsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FA73DA3197CAA5400C25D84 /* FilmsListViewController.swift */; };
+		2FA73DA6197CAA5400C25D84 /* ScreeningsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FA73DA5197CAA5400C25D84 /* ScreeningsListViewController.swift */; };
 		2FA73DA9197CAA5400C25D84 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2FA73DA7197CAA5400C25D84 /* Main.storyboard */; };
 		2FA73DAB197CAA5400C25D84 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2FA73DAA197CAA5400C25D84 /* Images.xcassets */; };
 		2FA73DB7197CAA5500C25D84 /* Film_JournalTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FA73DB6197CAA5500C25D84 /* Film_JournalTests.swift */; };
@@ -99,8 +99,8 @@
 		2FA73D9C197CAA5400C25D84 /* Film Journal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Film Journal.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2FA73DA0197CAA5400C25D84 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2FA73DA1197CAA5400C25D84 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		2FA73DA3197CAA5400C25D84 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
-		2FA73DA5197CAA5400C25D84 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		2FA73DA3197CAA5400C25D84 /* FilmsListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilmsListViewController.swift; sourceTree = "<group>"; };
+		2FA73DA5197CAA5400C25D84 /* ScreeningsListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreeningsListViewController.swift; sourceTree = "<group>"; };
 		2FA73DA8197CAA5400C25D84 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2FA73DAA197CAA5400C25D84 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		2FA73DB0197CAA5500C25D84 /* Film JournalTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Film JournalTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -213,8 +213,8 @@
 		2FA73DC1197CAA7600C25D84 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				2FA73DA3197CAA5400C25D84 /* FirstViewController.swift */,
-				2FA73DA5197CAA5400C25D84 /* SecondViewController.swift */,
+				2FA73DA3197CAA5400C25D84 /* FilmsListViewController.swift */,
+				2FA73DA5197CAA5400C25D84 /* ScreeningsListViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -418,10 +418,10 @@
 				2FCAB6F9197CBE9F00548CB2 /* Entry.swift in Sources */,
 				2FCAB6F5197CB8AE00548CB2 /* Screening.swift in Sources */,
 				2FCAB6F1197CB2E000548CB2 /* Person.swift in Sources */,
-				2FA73DA6197CAA5400C25D84 /* SecondViewController.swift in Sources */,
+				2FA73DA6197CAA5400C25D84 /* ScreeningsListViewController.swift in Sources */,
 				2FCAB6EF197CB19200548CB2 /* Film.swift in Sources */,
 				2FA73DA2197CAA5400C25D84 /* AppDelegate.swift in Sources */,
-				2FA73DA4197CAA5400C25D84 /* FirstViewController.swift in Sources */,
+				2FA73DA4197CAA5400C25D84 /* FilmsListViewController.swift in Sources */,
 				2FCAB6F3197CB5F600548CB2 /* Festival.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
