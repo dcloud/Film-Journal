@@ -77,11 +77,9 @@
 		2FA73D9E197CAA5400C25D84 /* Film Journal */ = {
 			isa = PBXGroup;
 			children = (
-				2FA73DA1197CAA5400C25D84 /* AppDelegate.swift */,
-				2FA73DA3197CAA5400C25D84 /* FirstViewController.swift */,
-				2FA73DA5197CAA5400C25D84 /* SecondViewController.swift */,
-				2FA73DA7197CAA5400C25D84 /* Main.storyboard */,
-				2FA73DAA197CAA5400C25D84 /* Images.xcassets */,
+				2FA73DC0197CAA6500C25D84 /* Classes */,
+				2FA73DC6197CAB9F00C25D84 /* Libraries */,
+				2FA73DC4197CAA9300C25D84 /* Resources */,
 				2FA73D9F197CAA5400C25D84 /* Supporting Files */,
 			);
 			path = "Film Journal";
@@ -92,7 +90,7 @@
 			children = (
 				2FA73DA0197CAA5400C25D84 /* Info.plist */,
 			);
-			name = "Supporting Files";
+			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
 		2FA73DB3197CAA5500C25D84 /* Film JournalTests */ = {
@@ -109,7 +107,65 @@
 			children = (
 				2FA73DB5197CAA5500C25D84 /* Info.plist */,
 			);
-			name = "Supporting Files";
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		2FA73DC0197CAA6500C25D84 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				2FA73DC5197CAADB00C25D84 /* Delegates */,
+				2FA73DC3197CAA8200C25D84 /* Models */,
+				2FA73DC2197CAA7F00C25D84 /* Views */,
+				2FA73DC1197CAA7600C25D84 /* Controllers */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		2FA73DC1197CAA7600C25D84 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				2FA73DA3197CAA5400C25D84 /* FirstViewController.swift */,
+				2FA73DA5197CAA5400C25D84 /* SecondViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		2FA73DC2197CAA7F00C25D84 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		2FA73DC3197CAA8200C25D84 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		2FA73DC4197CAA9300C25D84 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				2FA73DA7197CAA5400C25D84 /* Main.storyboard */,
+				2FA73DAA197CAA5400C25D84 /* Images.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		2FA73DC5197CAADB00C25D84 /* Delegates */ = {
+			isa = PBXGroup;
+			children = (
+				2FA73DA1197CAA5400C25D84 /* AppDelegate.swift */,
+			);
+			path = Delegates;
+			sourceTree = "<group>";
+		};
+		2FA73DC6197CAB9F00C25D84 /* Libraries */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Libraries;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -331,7 +387,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				INFOPLIST_FILE = "Film Journal/Info.plist";
+				INFOPLIST_FILE = "Film Journal/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -342,7 +398,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				INFOPLIST_FILE = "Film Journal/Info.plist";
+				INFOPLIST_FILE = "Film Journal/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -360,7 +416,7 @@
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = "Film JournalTests/Info.plist";
+				INFOPLIST_FILE = "Film JournalTests/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
@@ -375,7 +431,7 @@
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = "Film JournalTests/Info.plist";
+				INFOPLIST_FILE = "Film JournalTests/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
@@ -401,6 +457,7 @@
 				2FA73DBC197CAA5500C25D84 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2FA73DBD197CAA5500C25D84 /* Build configuration list for PBXNativeTarget "Film JournalTests" */ = {
 			isa = XCConfigurationList;
@@ -409,6 +466,7 @@
 				2FA73DBF197CAA5500C25D84 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
