@@ -40,8 +40,8 @@ enum Reaction: Int {
 }
 
 class Entry: RLMObject {
-    dynamic var film:Film
-    dynamic var thoughts: String?
+    dynamic var film:Film = Film()
+    dynamic var thoughts: String = ""
     dynamic var date = NSDate()
     var reaction:Reaction = .Undecided
     dynamic var reactionValue: NSNumber {
@@ -50,9 +50,8 @@ class Entry: RLMObject {
         }
     }
 
-
-    init(film:Film) {
-        self.film = film
-        super.init()
+    override class func ignoredProperties() -> [AnyObject]! {
+        return ["reaction"]
     }
+
 }

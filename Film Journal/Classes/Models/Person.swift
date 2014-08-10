@@ -9,16 +9,12 @@
 import Realm
 
 class Person: RLMObject {
-    dynamic let firstName: String
-    dynamic let lastName: String
+    dynamic var firstName: String = ""
+    dynamic var lastName: String = ""
 
-    init(firstName: String, lastName:String) {
-        self.firstName = firstName
-        self.lastName = lastName
-        super.init()
-    }
-
-    func fullName () -> String {
-        return firstName + " " + lastName
+    var fullName: String {
+        get {
+            return firstName + " " + lastName
+        }
     }
 }

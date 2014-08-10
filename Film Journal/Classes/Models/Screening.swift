@@ -9,15 +9,10 @@
 import Realm
 
 class Screening: RLMObject {
-    dynamic var startTime: NSDate
-    dynamic var endTime: NSDate?
-    dynamic var film: Film
-    dynamic var location: String?
+    dynamic var startTime: NSDate = NSDate()
+    dynamic var endTime: NSDate = NSDate()
+    dynamic var film: Film = Film()
+    dynamic var location: String = ""
     dynamic var have_ticket: Bool = false
 
-    init(film:Film, startTime:NSDate) {
-        self.film = film
-        self.startTime = startTime
-        super.init()
-    }
 }
