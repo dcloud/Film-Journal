@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2F1D74781998104200AF9CDD /* FilmsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F1D74771998104200AF9CDD /* FilmsTableViewController.swift */; };
+		2F1D747A1998134100AF9CDD /* FilmsTableDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F1D74791998134100AF9CDD /* FilmsTableDataSource.swift */; };
 		2F9BF47E19980765000911B4 /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F9BF47119980741000911B4 /* Realm.framework */; };
 		2F9BF48019980779000911B4 /* Realm.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 2F9BF47519980741000911B4 /* Realm.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		2FA73DA2197CAA5400C25D84 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FA73DA1197CAA5400C25D84 /* AppDelegate.swift */; };
@@ -109,6 +111,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		2F1D74771998104200AF9CDD /* FilmsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FilmsTableViewController.swift; sourceTree = "<group>"; };
+		2F1D74791998134100AF9CDD /* FilmsTableDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FilmsTableDataSource.swift; sourceTree = "<group>"; };
 		2F9BF46719980741000911B4 /* Realm-Xcode6.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = "Realm-Xcode6.xcodeproj"; path = "realm-cocoa/Realm-Xcode6.xcodeproj"; sourceTree = "<group>"; };
 		2FA73D9C197CAA5400C25D84 /* Film Journal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Film Journal.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2FA73DA0197CAA5400C25D84 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -231,6 +235,8 @@
 			children = (
 				2FA73DA5197CAA5400C25D84 /* ScreeningsListViewController.swift */,
 				2FB9BFDF197DCE950023F611 /* FilmsNavViewController.swift */,
+				2F1D74771998104200AF9CDD /* FilmsTableViewController.swift */,
+				2F1D74791998134100AF9CDD /* FilmsTableDataSource.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -448,9 +454,11 @@
 				2FCAB6F9197CBE9F00548CB2 /* Entry.swift in Sources */,
 				2FCAB6F5197CB8AE00548CB2 /* Screening.swift in Sources */,
 				2FCAB6F1197CB2E000548CB2 /* Person.swift in Sources */,
+				2F1D74781998104200AF9CDD /* FilmsTableViewController.swift in Sources */,
 				2FA73DA6197CAA5400C25D84 /* ScreeningsListViewController.swift in Sources */,
 				2FCAB6EF197CB19200548CB2 /* Film.swift in Sources */,
 				2FA73DA2197CAA5400C25D84 /* AppDelegate.swift in Sources */,
+				2F1D747A1998134100AF9CDD /* FilmsTableDataSource.swift in Sources */,
 				2FCAB6F3197CB5F600548CB2 /* Festival.swift in Sources */,
 				2FB9BFE0197DCE950023F611 /* FilmsNavViewController.swift in Sources */,
 			);

@@ -5,63 +5,9 @@
     </dependencies>
     <scenes>
         <!--Films-->
-        <scene sceneID="hNz-n2-bh7">
-            <objects>
-                <viewController storyboardIdentifier="FilmsListViewController" title="Films" useStoryboardIdentifierAsRestorationIdentifier="YES" id="9pv-A4-QxB" customClass="FilmsListViewController" customModule="Film_Journal" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="Ia1-K6-d13"/>
-                        <viewControllerLayoutGuide type="bottom" id="4ug-Mw-9AY"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="tsR-hK-woN">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="First View" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="KQZ-1w-vlD">
-                                <rect key="frame" x="221" y="279" width="158" height="42"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="36"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Loaded by FirstViewController" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A5M-7J-77L">
-                                <rect key="frame" x="203" y="329" width="195" height="17"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="D2w-aR-SgO">
-                                <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
-                                <textAttributes key="titleTextAttributes">
-                                    <offsetWrapper key="textShadowOffset" horizontal="0.0" vertical="0.0"/>
-                                </textAttributes>
-                                <items>
-                                    <navigationItem title="Films" id="Bbc-dg-PKt">
-                                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="7gU-PL-3xJ"/>
-                                    </navigationItem>
-                                </items>
-                            </navigationBar>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstAttribute="centerX" secondItem="KQZ-1w-vlD" secondAttribute="centerX" id="6BV-lF-sBN"/>
-                            <constraint firstItem="D2w-aR-SgO" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leading" id="PWc-OB-hgO"/>
-                            <constraint firstItem="D2w-aR-SgO" firstAttribute="top" secondItem="tsR-hK-woN" secondAttribute="top" id="bhQ-bf-3Gg"/>
-                            <constraint firstItem="A5M-7J-77L" firstAttribute="top" secondItem="KQZ-1w-vlD" secondAttribute="bottom" constant="8" symbolic="YES" id="cfb-er-3JN"/>
-                            <constraint firstItem="A5M-7J-77L" firstAttribute="centerX" secondItem="KQZ-1w-vlD" secondAttribute="centerX" id="e1l-AV-tCB"/>
-                            <constraint firstAttribute="centerY" secondItem="KQZ-1w-vlD" secondAttribute="centerY" id="exm-UA-ej4"/>
-                            <constraint firstItem="D2w-aR-SgO" firstAttribute="centerX" secondItem="KQZ-1w-vlD" secondAttribute="centerX" id="hCb-mk-TvO"/>
-                        </constraints>
-                    </view>
-                    <tabBarItem key="tabBarItem" title="Films" image="first" id="acW-dT-cKf"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1372" y="313"/>
-        </scene>
-        <!--Table View Controller-->
         <scene sceneID="2SE-BW-rBh">
             <objects>
-                <tableViewController storyboardIdentifier="FilmsListController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="qIO-Bg-vSE" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="FilmsTableViewController" title="Films" useStoryboardIdentifierAsRestorationIdentifier="YES" id="qIO-Bg-vSE" customClass="FilmsTableViewController" customModule="Film_Journal" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="ywV-EQ-UOR">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -79,7 +25,16 @@
                             <outlet property="delegate" destination="qIO-Bg-vSE" id="j9w-Ik-cKs"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="pVj-2k-ZhF"/>
+                    <navigationItem key="navigationItem" title="Films" id="pVj-2k-ZhF">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="ZkW-IY-o9n">
+                            <connections>
+                                <action selector="addButtonTapped:" destination="qIO-Bg-vSE" id="KDz-O5-8hA"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="addButton" destination="ZkW-IY-o9n" id="9hS-ez-7Zv"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="T68-Vx-Kkl" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -172,7 +127,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="first" width="30" height="30"/>
         <image name="second" width="30" height="30"/>
     </resources>
 </document>
