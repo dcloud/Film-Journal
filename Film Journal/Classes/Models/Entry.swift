@@ -8,7 +8,7 @@
 
 import Realm
 
-enum Reaction {
+enum Reaction: Int {
     case Undecided
     case Ambivalent
     case Like
@@ -40,10 +40,16 @@ enum Reaction {
 }
 
 class Entry: RLMObject {
-    var film:Film
-    var thoughts: String?
-    var date = NSDate()
+    dynamic var film:Film
+    dynamic var thoughts: String?
+    dynamic var date = NSDate()
     var reaction:Reaction = .Undecided
+    dynamic var reactionValue: NSNumber {
+        get {
+            return NSNumber(integer: reaction.toRaw())
+        }
+    }
+
 
     init(film:Film) {
         self.film = film

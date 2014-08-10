@@ -9,8 +9,8 @@
 import Realm
 
 class Person: RLMObject {
-    let firstName: String
-    let lastName: String
+    dynamic let firstName: String
+    dynamic let lastName: String
 
     init(firstName: String, lastName:String) {
         self.firstName = firstName

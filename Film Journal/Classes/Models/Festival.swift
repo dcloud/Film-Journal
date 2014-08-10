@@ -9,13 +9,13 @@
 import Realm
 
 class Festival: RLMObject {
-    let name: String
-    let year: Int
+    dynamic let name: String
+    dynamic let year: Int
 
-    var startDate: NSDate?
-    var endDate: NSDate?
+    dynamic var startDate: NSDate?
+    dynamic var endDate: NSDate?
 
-    var films = RLMArray(objectClassName: Film.className())
+    dynamic var films = RLMArray(objectClassName: Film.className())
 
     init(name: String, year: Int) {
         self.name = name

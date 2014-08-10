@@ -9,18 +9,18 @@
 import Realm
 
 class Film: RLMObject {
-    let title: String
-    var summary: String?
-    var fullDescription: String?
+    dynamic let title: String
+    dynamic var summary: String?
+    dynamic var fullDescription: String?
 
-    var country: [String]?
-    var language: [String]?
+    dynamic var country: [String]?
+    dynamic var language: [String]?
 
-    var runtime: Int?
-    var alternateTitles: [String]?
+    dynamic var runtime: NSNumber?
+    dynamic var alternateTitles: [String]?
 
-    var director: Person?
-    var actors = RLMArray(objectClassName: Person.className())
+    dynamic var director: Person?
+    dynamic var actors = RLMArray(objectClassName: Person.className())
 
     init(title: String) {
         self.title = title
