@@ -17,6 +17,7 @@ class Language: RLMObject {
 }
 
 class Film: RLMObject {
+    dynamic var uuid: String = NSUUID().UUIDString
     dynamic var title = ""
     dynamic var summary = ""
     dynamic var fullDescription = ""

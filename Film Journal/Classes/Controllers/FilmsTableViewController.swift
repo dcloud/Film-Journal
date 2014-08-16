@@ -8,14 +8,24 @@
 
 import UIKit
 
-class FilmsTableViewController: UITableViewController {
+class FilmsTableViewController: UITableViewController, UITableViewDelegate {
 
     @IBOutlet var addButton: UIBarButtonItem?
+
+    var selectedFilm: Film?
+    var filmsDataSrc: FilmsTableDataSource?
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        self.tableView.dataSource = FilmsTableDataSource()
+        self.tableView.delegate = self
+        self.filmsDataSrc = FilmsTableDataSource()
+        self.tableView.dataSource = self.filmsDataSrc
+    }
+
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
+        self.filmsDataSrc?.reloadData()
     }
 
     override func didReceiveMemoryWarning() {
@@ -27,15 +37,19 @@ class FilmsTableViewController: UITableViewController {
         self.performSegueWithIdentifier("ShowFilmDetail", sender: self)
     }
 
+    override func tableView(tableView: UITableView!, didSelectRowAtIndexPath indexPath: NSIndexPath!) {
+        self.selectedFilm = self.filmsDataSrc?.array.objectAtIndex(UInt(indexPath.row)) as? Film
+        self.performSegueWithIdentifier("ShowFilmDetail", sender: self)
+    }
 
-    /*
     // MARK: - Navigation
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepareForSegue(segue: UIStoryboardSegue!, sender: AnyObject!) {
-        // Get the new view controller using [segue destinationViewController].
-        // Pass the selected object to the new view controller.
+        if let filmEditVC = segue.destinationViewController as? FilmEditViewController {
+            if let selectedFilm = self.selectedFilm {
+                filmEditVC.film = selectedFilm
+            }
+        }
     }
-    */
 
 }
